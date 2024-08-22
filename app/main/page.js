@@ -4,7 +4,7 @@ import { Box, Stack, TextField, IconButton, CircularProgress } from '@mui/materi
 import { styled } from '@mui/system';
 import SendIcon from '@mui/icons-material/Send';
 import StopIcon from '@mui/icons-material/Stop';
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'; // Imported the upward-pointing arrow icon
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'; 
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
@@ -188,7 +188,7 @@ export default function Home() {
                     <IconButton 
                         onClick={sendMessage} 
                         style={{ 
-                            backgroundColor: isTyping ? '#3c3c3c' : '#2b2b2b',  // Lighter background when typing
+                            backgroundColor: isTyping ? '#3c3c3c' : '#2b2b2b',  
                             color: '#ffffff', 
                             padding: '8px', 
                             fontSize: 'medium',
