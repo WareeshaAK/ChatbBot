@@ -4,7 +4,7 @@ import { useUser, UserButton, SignedIn, SignedOut } from "@clerk/nextjs";
 
 export default function Home() {
   const router = useRouter();
-  const { isSignedIn, user } = useUser(); // Access user object for user details
+  const { isSignedIn, user } = useUser(); 
 
   const handleLogin = () => {
     router.push('/sign-in');
