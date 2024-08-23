@@ -45,7 +45,7 @@ export default function Home() {
                   <p style={welcomeMessageStyle}>Welcome, {user.firstName} to PAAW</p>
                 </div>
                 <div style={secondMessageBubbleStyle}>
-                  <p style={secondMessageTextStyle} className="typing">...</p>
+                  <p style={secondMessageTextStyle} className="typing">.</p>
                 </div>
               </>
             )}
