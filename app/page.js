@@ -80,6 +80,8 @@ const containerStyle = {
 
 const leftSideStyle = {
   flex: 1,
+  display:'flex',
+  flexWrap: 'wrap',
 };
 
 const titleStyle = {
@@ -96,6 +98,7 @@ const initialStyle = {
 const centerBoxStyle = {
   flex: 1,
   display: 'flex',
+  flexWrap: 'wrap',
   height: '90%',
   flexDirection: 'column',
   justifyContent: 'center', 
@@ -122,6 +125,7 @@ const subtitleStyle = {
 
 const buttonGroupStyle = {
   display: 'flex',
+  flexWrap: 'wrap',
   flexDirection: 'column',
   alignItems: 'center',
   width: '100%',
@@ -144,6 +148,7 @@ const rightSideStyle = {
   fontSize: '1.1rem',
   lineHeight: '1.5',
   display: 'flex',
+  flexWrap: 'wrap',
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
