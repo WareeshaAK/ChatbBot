@@ -69,6 +69,7 @@ export default function Home() {
 
 const containerStyle = {
   display: 'flex',
+  flexWrap: 'wrap',
   justifyContent: 'space-between',
   alignItems: 'center',
   height: '100vh',
