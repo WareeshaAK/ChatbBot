@@ -12,6 +12,7 @@ const ChatContainer = styled(Box)({
     width: '100%',
     height: '100vh',
     display: 'flex',
+    flexWrap: 'wrap',
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: "#2b2b2b",
@@ -20,12 +21,19 @@ const ChatContainer = styled(Box)({
     fontFamily: 'Verdana, sans-serif',
     position: 'relative',
     cursor: 'auto', 
+    '@media (max-width: 600px)': { // Mobile screens
+        flexDirection: 'column',
+        justifyContent: 'flex-start',
+        paddingTop: '80px', 
+    },
 });
 
 const ChatBox = styled(Stack)({
     width: '100%',
     maxWidth: '415px',
     height: '100%',
+    display: 'flex',
+    flexWrap: 'wrap',
     border: '1px solid #d1d5db',
     borderRadius: '40px',
     padding: '16px',
@@ -38,6 +46,9 @@ const ChatBox = styled(Stack)({
     cursor: 'auto', 
     '&::-webkit-scrollbar': {
         display: 'none', 
+    },
+    '@media (max-width: 600px)': { // Mobile screens
+       marginTop: '20px', 
     },
 });
 
@@ -150,7 +161,18 @@ export default function Home() {
 
     return (
         <ChatContainer>
-            <Box sx={{ position: 'absolute', top: '16px', left: '16px', fontFamily: 'BernhardMod BT', fontSize: '55px', color: '#ffffff' }}>
+            <Box sx={{ 
+                    position: 'absolute', 
+                    top: '16px', 
+                    left: '16px', 
+                    fontFamily: 'BernhardMod BT', 
+                    fontSize: '55px', 
+                    color: '#ffffff',
+                    '@media (max-width: 550px)': { // Mobile screens
+                        top: '8px', 
+                        fontSize: '45px', 
+                    },
+                }}>
                 PAAW
             </Box>
             <ChatBox ref={chatBoxRef}>
